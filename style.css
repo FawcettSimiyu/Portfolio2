@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #3a506b, #5b6d7f);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+header button {
+    background-color: #f6b93b;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+header button:hover {
+    background-color: #f39c12;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #3a506b;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #555;
+}
+
+/* Project Categories */
+.project-category h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    color: #3a506b;
+    border-bottom: 2px solid #3a506b;
+    display: inline-block;
+}
+
+.projects-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 280px;
+    min-width: 280px; /* To maintain consistent card size in scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    color: #3a506b;
+    margin: 1rem;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0 1rem;
+}
+
+.project-card .technologies {
+    font-size: 0.85rem;
+    color: #3a506b;
+    margin: 0.5rem 1rem 1rem;
+}
+
+.project-card button {
+    background-color: #3a506b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-card button:hover {
+    background-color: #5b6d7f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3a506b;
+    color: white;
+}
+
